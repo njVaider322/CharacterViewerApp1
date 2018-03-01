@@ -31,6 +31,7 @@
 		423C7B6B2047B2B90056117D /* CharacterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B6A2047B2B90056117D /* CharacterListTableViewCell.swift */; };
 		423C7B6E2047BA4E0056117D /* CharacterGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B6D2047BA4E0056117D /* CharacterGridViewController.swift */; };
 		423C7B702047BB470056117D /* CharacterGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B6F2047BB470056117D /* CharacterGridCollectionViewCell.swift */; };
+		423C7B742047CD100056117D /* Notes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 423C7B732047CD100056117D /* Notes.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		423C7B6A2047B2B90056117D /* CharacterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewCell.swift; sourceTree = "<group>"; };
 		423C7B6D2047BA4E0056117D /* CharacterGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridViewController.swift; sourceTree = "<group>"; };
 		423C7B6F2047BB470056117D /* CharacterGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		423C7B732047CD100056117D /* Notes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Notes.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		423C7B2A2047A9CE0056117D /* CharacterViewerApp */ = {
 			isa = PBXGroup;
 			children = (
+				423C7B722047CA770056117D /* Resources */,
 				423C7B602047B07C0056117D /* User Interface */,
 				423C7B502047AE400056117D /* App Services */,
 				423C7B442047ABE90056117D /* Data Access */,
@@ -241,6 +244,14 @@
 			path = "Character Detail";
 			sourceTree = "<group>";
 		};
+		423C7B722047CA770056117D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B732047CD100056117D /* Notes.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +313,7 @@
 			files = (
 				423C7B382047A9CE0056117D /* LaunchScreen.storyboard in Resources */,
 				423C7B352047A9CE0056117D /* Assets.xcassets in Resources */,
+				423C7B742047CD100056117D /* Notes.pdf in Resources */,
 				423C7B332047A9CE0056117D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
