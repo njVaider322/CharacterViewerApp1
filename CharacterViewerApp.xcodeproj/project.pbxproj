@@ -15,6 +15,10 @@
 		423C7B382047A9CE0056117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423C7B362047A9CE0056117D /* LaunchScreen.storyboard */; };
 		423C7B412047AB320056117D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B402047AB320056117D /* Constants.swift */; };
 		423C7B432047AB5C0056117D /* QueueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B422047AB5C0056117D /* QueueContainer.swift */; };
+		423C7B482047AC660056117D /* CharacterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B472047AC660056117D /* CharacterInterface.swift */; };
+		423C7B4A2047AC910056117D /* HttpInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B492047AC910056117D /* HttpInterface.swift */; };
+		423C7B4C2047ACBB0056117D /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B4B2047ACBB0056117D /* HttpService.swift */; };
+		423C7B4F2047AD1C0056117D /* CharacterDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B4E2047AD1C0056117D /* CharacterDO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		423C7B392047A9CE0056117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		423C7B402047AB320056117D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		423C7B422047AB5C0056117D /* QueueContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueContainer.swift; sourceTree = "<group>"; };
+		423C7B472047AC660056117D /* CharacterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInterface.swift; sourceTree = "<group>"; };
+		423C7B492047AC910056117D /* HttpInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpInterface.swift; sourceTree = "<group>"; };
+		423C7B4B2047ACBB0056117D /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		423C7B4E2047AD1C0056117D /* CharacterDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		423C7B2A2047A9CE0056117D /* CharacterViewerApp */ = {
 			isa = PBXGroup;
 			children = (
+				423C7B442047ABE90056117D /* Data Access */,
 				423C7B3F2047AB0D0056117D /* Helpers */,
 				423C7B2B2047A9CE0056117D /* AppDelegate.swift */,
 				423C7B2D2047A9CE0056117D /* MasterViewController.swift */,
@@ -79,6 +88,41 @@
 				423C7B422047AB5C0056117D /* QueueContainer.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		423C7B442047ABE90056117D /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B4D2047AD050056117D /* Models */,
+				423C7B462047AC400056117D /* Interfaces */,
+				423C7B452047AC1F0056117D /* Networking */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		423C7B452047AC1F0056117D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B4B2047ACBB0056117D /* HttpService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		423C7B462047AC400056117D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B472047AC660056117D /* CharacterInterface.swift */,
+				423C7B492047AC910056117D /* HttpInterface.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		423C7B4D2047AD050056117D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B4E2047AD1C0056117D /* CharacterDO.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				423C7B302047A9CE0056117D /* DetailViewController.swift in Sources */,
+				423C7B482047AC660056117D /* CharacterInterface.swift in Sources */,
 				423C7B2E2047A9CE0056117D /* MasterViewController.swift in Sources */,
+				423C7B4F2047AD1C0056117D /* CharacterDO.swift in Sources */,
 				423C7B2C2047A9CE0056117D /* AppDelegate.swift in Sources */,
 				423C7B432047AB5C0056117D /* QueueContainer.swift in Sources */,
+				423C7B4C2047ACBB0056117D /* HttpService.swift in Sources */,
 				423C7B412047AB320056117D /* Constants.swift in Sources */,
+				423C7B4A2047AC910056117D /* HttpInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
