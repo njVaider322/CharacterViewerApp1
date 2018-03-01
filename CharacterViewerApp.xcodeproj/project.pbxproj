@@ -19,6 +19,12 @@
 		423C7B4A2047AC910056117D /* HttpInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B492047AC910056117D /* HttpInterface.swift */; };
 		423C7B4C2047ACBB0056117D /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B4B2047ACBB0056117D /* HttpService.swift */; };
 		423C7B4F2047AD1C0056117D /* CharacterDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B4E2047AD1C0056117D /* CharacterDO.swift */; };
+		423C7B552047AEB00056117D /* ParseDataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B542047AEB00056117D /* ParseDataInterface.swift */; };
+		423C7B572047AED70056117D /* ParseHelperInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B562047AED70056117D /* ParseHelperInterface.swift */; };
+		423C7B592047AEF40056117D /* CharacterServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B582047AEF40056117D /* CharacterServiceInterface.swift */; };
+		423C7B5B2047AF340056117D /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B5A2047AF340056117D /* CharacterService.swift */; };
+		423C7B5D2047AF600056117D /* ParseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B5C2047AF600056117D /* ParseDataService.swift */; };
+		423C7B5F2047AF890056117D /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B5E2047AF890056117D /* ParseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		423C7B492047AC910056117D /* HttpInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpInterface.swift; sourceTree = "<group>"; };
 		423C7B4B2047ACBB0056117D /* HttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		423C7B4E2047AD1C0056117D /* CharacterDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDO.swift; sourceTree = "<group>"; };
+		423C7B542047AEB00056117D /* ParseDataInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseDataInterface.swift; sourceTree = "<group>"; };
+		423C7B562047AED70056117D /* ParseHelperInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHelperInterface.swift; sourceTree = "<group>"; };
+		423C7B582047AEF40056117D /* CharacterServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterServiceInterface.swift; sourceTree = "<group>"; };
+		423C7B5A2047AF340056117D /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		423C7B5C2047AF600056117D /* ParseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseDataService.swift; sourceTree = "<group>"; };
+		423C7B5E2047AF890056117D /* ParseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		423C7B2A2047A9CE0056117D /* CharacterViewerApp */ = {
 			isa = PBXGroup;
 			children = (
+				423C7B502047AE400056117D /* App Services */,
 				423C7B442047ABE90056117D /* Data Access */,
 				423C7B3F2047AB0D0056117D /* Helpers */,
 				423C7B2B2047A9CE0056117D /* AppDelegate.swift */,
@@ -123,6 +136,43 @@
 				423C7B4E2047AD1C0056117D /* CharacterDO.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		423C7B502047AE400056117D /* App Services */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B532047AE890056117D /* Helpers */,
+				423C7B522047AE770056117D /* Interfaces */,
+				423C7B512047AE5E0056117D /* Services */,
+			);
+			path = "App Services";
+			sourceTree = "<group>";
+		};
+		423C7B512047AE5E0056117D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B5A2047AF340056117D /* CharacterService.swift */,
+				423C7B5C2047AF600056117D /* ParseDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		423C7B522047AE770056117D /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B542047AEB00056117D /* ParseDataInterface.swift */,
+				423C7B562047AED70056117D /* ParseHelperInterface.swift */,
+				423C7B582047AEF40056117D /* CharacterServiceInterface.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		423C7B532047AE890056117D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B5E2047AF890056117D /* ParseHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +250,18 @@
 				423C7B302047A9CE0056117D /* DetailViewController.swift in Sources */,
 				423C7B482047AC660056117D /* CharacterInterface.swift in Sources */,
 				423C7B2E2047A9CE0056117D /* MasterViewController.swift in Sources */,
+				423C7B572047AED70056117D /* ParseHelperInterface.swift in Sources */,
 				423C7B4F2047AD1C0056117D /* CharacterDO.swift in Sources */,
+				423C7B592047AEF40056117D /* CharacterServiceInterface.swift in Sources */,
 				423C7B2C2047A9CE0056117D /* AppDelegate.swift in Sources */,
 				423C7B432047AB5C0056117D /* QueueContainer.swift in Sources */,
 				423C7B4C2047ACBB0056117D /* HttpService.swift in Sources */,
 				423C7B412047AB320056117D /* Constants.swift in Sources */,
 				423C7B4A2047AC910056117D /* HttpInterface.swift in Sources */,
+				423C7B5D2047AF600056117D /* ParseDataService.swift in Sources */,
+				423C7B5B2047AF340056117D /* CharacterService.swift in Sources */,
+				423C7B552047AEB00056117D /* ParseDataInterface.swift in Sources */,
+				423C7B5F2047AF890056117D /* ParseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
