@@ -13,6 +13,8 @@
 		423C7B332047A9CE0056117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423C7B312047A9CE0056117D /* Main.storyboard */; };
 		423C7B352047A9CE0056117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 423C7B342047A9CE0056117D /* Assets.xcassets */; };
 		423C7B382047A9CE0056117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423C7B362047A9CE0056117D /* LaunchScreen.storyboard */; };
+		423C7B412047AB320056117D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B402047AB320056117D /* Constants.swift */; };
+		423C7B432047AB5C0056117D /* QueueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C7B422047AB5C0056117D /* QueueContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		423C7B342047A9CE0056117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		423C7B372047A9CE0056117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		423C7B392047A9CE0056117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		423C7B402047AB320056117D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		423C7B422047AB5C0056117D /* QueueContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		423C7B2A2047A9CE0056117D /* CharacterViewerApp */ = {
 			isa = PBXGroup;
 			children = (
+				423C7B3F2047AB0D0056117D /* Helpers */,
 				423C7B2B2047A9CE0056117D /* AppDelegate.swift */,
 				423C7B2D2047A9CE0056117D /* MasterViewController.swift */,
 				423C7B2F2047A9CE0056117D /* DetailViewController.swift */,
@@ -65,6 +70,15 @@
 				423C7B392047A9CE0056117D /* Info.plist */,
 			);
 			path = CharacterViewerApp;
+			sourceTree = "<group>";
+		};
+		423C7B3F2047AB0D0056117D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				423C7B402047AB320056117D /* Constants.swift */,
+				423C7B422047AB5C0056117D /* QueueContainer.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +156,8 @@
 				423C7B302047A9CE0056117D /* DetailViewController.swift in Sources */,
 				423C7B2E2047A9CE0056117D /* MasterViewController.swift in Sources */,
 				423C7B2C2047A9CE0056117D /* AppDelegate.swift in Sources */,
+				423C7B432047AB5C0056117D /* QueueContainer.swift in Sources */,
+				423C7B412047AB320056117D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
